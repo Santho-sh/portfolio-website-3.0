@@ -1,7 +1,7 @@
-import { ArrowDown, Mail, MapPin } from "lucide-react";
+import { ArrowDown, FileText, Mail, MapPin } from "lucide-react";
 import Link from "next/link";
 import { GitHubIcon, LinkedInIcon } from "@/components/icons";
-import { personalInfo } from "@/lib/data";
+import { personalInfo, resume } from "@/lib/data";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -60,6 +60,12 @@ export function Hero() {
               <Link href="#projects">View my work</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
+              <Link href={resume} target="_blank" rel="noopener noreferrer">
+                <FileText />
+                Resume
+              </Link>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
               <Link href="#contact">Contact me</Link>
             </Button>
           </div>
@@ -96,10 +102,7 @@ export function Hero() {
         <div className="relative mx-auto lg:mx-0">
           <div className="absolute -inset-4 rounded-full bg-linear-to-br from-primary/20 to-primary/5 blur-2xl" />
           <Avatar className="relative size-56 border-4 border-background shadow-2xl ring-2 ring-primary/20 sm:size-72">
-            <AvatarImage
-              src="/placeholder-avatar.svg"
-              alt={personalInfo.name}
-            />
+            <AvatarImage src="/avatar.webp" alt={personalInfo.name} />
             <AvatarFallback className="bg-primary/10 text-3xl font-semibold text-primary">
               {initials}
             </AvatarFallback>

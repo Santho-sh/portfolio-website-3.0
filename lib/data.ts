@@ -13,6 +13,9 @@ export const personalInfo = {
 export const summary =
   "Full Stack & AI Engineer with 2+ years of experience building high-performance web applications and autonomous AI systems. Proven expertise in developing scalable solutions using React.js, Next.js, and Node.js, with a recent focus on AI Agents, Model Context Protocol (MCP), and LLM integration. Strong track record of optimizing application speed, managing significant user engagement, and bridging the gap between traditional software engineering and modern AI implementation.";
 
+export const resume =
+  "https://drive.google.com/file/d/1Go9Y8rD6Xx7oaER5npkdcJ2fPurCVcdE/view?usp=sharing";
+
 export const skills = [
   {
     category: "AI & Machine Learning",
@@ -81,26 +84,28 @@ export const projects = [
   {
     title: "TechBuz.net",
     description:
-      "Co-developed and maintain TechBuz.net, a comprehensive mobile specifications and comparison platform serving approximately 100,000 monthly users. Built a user-friendly interface for detailed mobile specs and side-by-side comparisons that drives engagement and retention.",
+      "Co-developed and maintain TechBuz.net, a comprehensive mobile specifications and comparison platform serving approximately 100,000 monthly users. Built a user-friendly interface for detailed mobile specs and side-by-side comparisons that drives engagement and retention. AI Powered summaries and insights enhance user experience and SEO performance.",
     url: "https://techbuz.net",
-    image: "/placeholder-project-techbuz.svg",
-    tags: ["Next.js", "React", "Performance", "SEO"],
+    image: "/project_techbuz.webp",
+    tags: ["Next.js", "React", "Performance", "SEO", "OpenAI"],
     featured: true,
   },
   {
-    title: "AI Agent Workflows",
+    title: "Mindchat",
     description:
-      "Custom MCP servers and AI agent pipelines that automate internal data processing and power conversational interfaces across enterprise applications.",
-    image: "/placeholder-project-ai.svg",
-    tags: ["MCP", "OpenAI", "Node.js", "TypeScript"],
+      "Designed and implemented Mindchat, an AI-powered mental wellness App that provides personalized support and resources. Integrated OpenAI's language models to create a responsive chatbot that offers empathetic conversations and actionable advice, enhancing user engagement and retention.",
+    url: "https://www.mindchatapp.com/",
+    image: "/project_mindchat.webp",
+    tags: ["React", "OpenAI", "Node.js", "TypeScript", "Python", "PostgreSQL"],
     featured: false,
   },
   {
-    title: "E-Commerce Platform",
+    title: "Kovailands",
     description:
-      "High-performance e-commerce experiences built with Next.js, optimized for fast rendering, scalable APIs, and smooth checkout flows.",
-    image: "/placeholder-project-ecommerce.svg",
-    tags: ["Next.js", "React", "REST APIs", "PostgreSQL"],
+      "Developed Kovailands, a comprehensive real estate listing platform for the Coimbatore region, featuring advanced search capabilities and detailed property information. Implemented a responsive frontend using React and Tailwind CSS, while building a robust backend with Go, PostgreSQL, and Prisma to manage listings and user interactions effectively.",
+    url: "https://www.kovailands.com/",
+    image: "/project_kovailands.webp",
+    tags: ["React", "REST APIs", "PostgreSQL", "Prisma", "Tailwind CSS", "GO"],
     featured: false,
   },
 ];
@@ -110,25 +115,25 @@ export const certificates = [
     title: "CS50's Introduction to Computer Science",
     issuer: "Harvard University",
     date: "Nov 2022",
-    url: "#",
+    url: "https://drive.google.com/file/d/1ljL-kQPLPqwIZKdFuqTkKY1h3Bss5CqG/view?usp=sharing",
   },
   {
     title: "CS50's Introduction to Programming with Python",
     issuer: "Harvard University",
     date: "Jan 2023",
-    url: "#",
+    url: "https://drive.google.com/file/d/11I145DMODVG9fTY0uVeJ-ca5mAhzBuU_/view?usp=sharing",
   },
   {
     title: "Fundamentals of Digital Marketing",
     issuer: "Google",
     date: "Feb 2022",
-    url: "#",
+    url: "https://drive.google.com/file/d/10S262s_yBRgtg2d43JEqgJ2HVjphGcgS/view?usp=sharing",
   },
   {
     title: "Advanced Google Analytics",
     issuer: "Google",
     date: "Jun 2022",
-    url: "#",
+    url: "https://drive.google.com/file/d/1FsDv6NXfiZbGxWye2_GM0P-J4GXtegF2/view?usp=sharing",
   },
 ];
 
@@ -137,6 +142,6 @@ export const navLinks = [
   { href: "#skills", label: "Skills" },
   { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
-  { href: "#education", label: "Education" },
+  { href: "#certificates", label: "Certificates" },
   { href: "#contact", label: "Contact" },
 ];

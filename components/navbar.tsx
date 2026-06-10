@@ -1,9 +1,9 @@
 "use client";
 
-import { Menu } from "lucide-react";
+import { FileText, Menu } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { navLinks, personalInfo } from "@/lib/data";
+import { navLinks, personalInfo, resume } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
@@ -51,6 +51,12 @@ export function Navbar() {
             </Button>
           ))}
           <ThemeToggle />
+          <Button size="sm" variant="outline" asChild>
+            <Link href={resume} target="_blank" rel="noopener noreferrer">
+              <FileText />
+              Resume
+            </Link>
+          </Button>
           <Button size="sm" asChild>
             <Link href="#contact">Get in touch</Link>
           </Button>
@@ -81,7 +87,18 @@ export function Navbar() {
                     <Link href={link.href}>{link.label}</Link>
                   </Button>
                 ))}
-                <Button className="mt-2" asChild onClick={() => setOpen(false)}>
+                <Button
+                  variant="outline"
+                  className="mt-2"
+                  asChild
+                  onClick={() => setOpen(false)}
+                >
+                  <Link href={resume} target="_blank" rel="noopener noreferrer">
+                    <FileText />
+                    Resume
+                  </Link>
+                </Button>
+                <Button asChild onClick={() => setOpen(false)}>
                   <Link href="#contact">Get in touch</Link>
                 </Button>
               </div>
